@@ -1,0 +1,99 @@
+{
+  "events": [
+    {
+      "at": "2026-10-23T21:40:23.888420+00:00",
+      "run_id": "44c7437f-d709-4bdc-9390-cb3c31c99729",
+      "defenses": [
+        "PHISHING_PAYMENT",
+        "VERIFICATION_CODE_REQUEST"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:47:59.213474+00:00",
+      "run_id": "501076e8-b435-4a1d-b6bd-0fa27b1c5d10",
+      "defenses": [
+        "PROMPT_INJECTION"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:57:24.292905+00:00",
+      "run_id": "cf69297b-50a9-44fa-a4a5-93e2755df960",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:57:27.229570+00:00",
+      "run_id": "156fd5fc-bd22-4c4c-98cb-2b5048828915",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:57:29.760256+00:00",
+      "run_id": "eeb05aae-bdd4-4c5d-855d-849860779205",
+      "defenses": [
+        "HIDDEN_TEXT"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:57:32.134304+00:00",
+      "run_id": "2db9b0a8-ce0c-45ba-8880-192947e6f3bd",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T21:57:32.826500+00:00",
+      "run_id": "7980a39b-6993-4f00-a8b0-fe54cbebf03f",
+      "defenses": [
+        "HIDDEN_TEXT"
+      ],
+      "summary": "Visible synthetic security test completed."
+    },
+    {
+      "at": "2026-10-23T22:11:27.414864+00:00",
+      "run_id": "53e04ee0-d847-4e92-815d-f53b184d6370",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T22:11:53.640873+00:00",
+      "run_id": "011b1972-b21a-4301-b679-b9f0cdc295a7",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T22:18:56.199603+00:00",
+      "run_id": "f900db2c-9891-496f-94c1-4135f43ae9d7",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T22:18:59.244707+00:00",
+      "run_id": "1828ddc9-f655-43df-8f81-bf3a84dd99ba",
+      "defenses": [
+        "PRICE_MANIPULATION"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    }
+  ]
+}

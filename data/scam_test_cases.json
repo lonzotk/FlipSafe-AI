@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "note": "Synthetic training and UI fixtures; labels are expected outcomes for local testing, not AI decisions.",
+  "messages": [
+    {"id":"normal-01","label":"normal","risk":"low","message":"Hey, does the monitor include the stand and DisplayPort cable? I can pick it up Saturday afternoon.","expected_signals":["ordinary accessory question","normal pickup planning"]},
+    {"id":"normal-02","label":"normal","risk":"low","message":"Would you take $85 if I pay through the marketplace checkout? No worries if not.","expected_signals":["ordinary negotiation","on-platform payment"]},
+    {"id":"normal-03","label":"normal","risk":"low","message":"Is the SSD health available from a SMART screenshot, and is the mounting screw included?","expected_signals":["reasonable condition question","reasonable accessory question"]},
+    {"id":"normal-04","label":"normal","risk":"low","message":"Can you confirm the phone is unlocked and that Face ID and the cameras were tested?","expected_signals":["reasonable function question"]},
+    {"id":"scam-01","label":"scam","risk":"high","message":"I will send a courier. Pay me back the extra $300 after my company transfer clears. Email me at buyer@example.test.","expected_signals":["overpayment/refund request","off-platform contact","courier pressure"]},
+    {"id":"scam-02","label":"scam","risk":"high","message":"Click this payment confirmation link and send me the six-digit code you receive so I can release the money.","expected_signals":["suspicious link","verification code request"]},
+    {"id":"scam-03","label":"scam","risk":"high","message":"I can pay immediately, but you must ship today to my freight agent. Send your full name, home address, and a photo of your ID.","expected_signals":["urgency","shipping pressure","personal data request"]},
+    {"id":"scam-04","label":"scam","risk":"medium","message":"The app is holding my payment. Move this to text and I will send a screenshot as proof; please reserve it for me now.","expected_signals":["off-platform move","payment screenshot claim","urgency"]}
+  ]
+}
