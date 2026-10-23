@@ -335,21 +335,49 @@
       "cost_status": "pending",
       "optimized": true,
       "at": "2026-10-23T22:29:54.242978+00:00"
+    },
+    {
+      "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
+      "agent": "photo_inspection",
+      "source": "pydantic_ai",
+      "input_tokens": 1259,
+      "cached_input_tokens": null,
+      "cache_write_tokens": 1133,
+      "output_tokens": 200,
+      "total_tokens": 1459,
+      "cost_usd": null,
+      "cost_status": "pending",
+      "optimized": true,
+      "at": "2026-10-23T22:43:48.359580+00:00"
+    },
+    {
+      "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
+      "agent": "listing_and_buyer_safety",
+      "source": "portkey",
+      "input_tokens": 1003,
+      "cached_input_tokens": null,
+      "cache_write_tokens": null,
+      "output_tokens": 399,
+      "total_tokens": 1402,
+      "cost_usd": null,
+      "cost_status": "pending",
+      "optimized": true,
+      "at": "2026-10-23T22:43:51.507402+00:00"
     }
   ],
   "summary": {
-    "runs": 17,
-    "usage_records": 24,
+    "runs": 18,
+    "usage_records": 26,
     "optimized": {
-      "calls": 22,
-      "measured_calls": 22,
-      "measured_runs": 15,
-      "total_tokens": 22868,
-      "average_tokens_per_run": 1524.53,
+      "calls": 24,
+      "measured_calls": 24,
+      "measured_runs": 16,
+      "total_tokens": 25729,
+      "average_tokens_per_run": 1608.06,
       "total_cost": null,
       "average_cost_per_run": null,
-      "estimated_total_cost": 0.017013,
-      "average_estimated_cost_per_run": 0.0011342,
+      "estimated_total_cost": 0.0190425,
+      "average_estimated_cost_per_run": 0.00119016,
       "cost_status": "estimated"
     },
     "unoptimized": {
@@ -368,8 +396,8 @@
       "1": {
         "optimized": {
           "monthly_users": 1,
-          "tokens": 1525,
-          "cost": 0.0011342,
+          "tokens": 1608,
+          "cost": 0.00119016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -382,8 +410,8 @@
       "100": {
         "optimized": {
           "monthly_users": 100,
-          "tokens": 152453,
-          "cost": 0.11342,
+          "tokens": 160806,
+          "cost": 0.119016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -396,8 +424,8 @@
       "10000": {
         "optimized": {
           "monthly_users": 10000,
-          "tokens": 15245300,
-          "cost": 11.342,
+          "tokens": 16080600,
+          "cost": 11.9016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -410,7 +438,7 @@
     },
     "instruction_cache": {
       "hits": 7,
-      "misses": 15,
+      "misses": 18,
       "entries": 3
     },
     "pricing_assumption": "Measured Portkey costs are used when available. Otherwise, estimates use $0.50 / 1M input tokens, $0.05 / 1M cached input tokens, and $1.50 / 1M output tokens."

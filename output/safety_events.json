@@ -94,6 +94,24 @@
         "PRICE_MANIPULATION"
       ],
       "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T22:44:01.376501+00:00",
+      "run_id": "b13a0682-f910-4582-b3b3-8fe242086152",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T22:44:05.359477+00:00",
+      "run_id": "4f61eb5f-69b2-4c94-a8be-4326021a05f6",
+      "defenses": [
+        "PHISHING_PAYMENT",
+        "VERIFICATION_CODE_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
     }
   ]
 }

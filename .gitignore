@@ -49,3 +49,5 @@ desktop.ini
 # Keep output/audit_trail.json, token_metrics.json, and safety_events.json tracked.
 
 run.py
+report.html
+slides.html

@@ -1031,120 +1031,10 @@
     },
     {
       "run_id": "222bd726-2d28-42ed-a24c-cde6434eea21",
-      "kind": "appraisal",
+      "kind": "persisted",
       "optimized": true,
       "status": "complete",
-      "events": [
-        {
-          "at": "2026-10-23T22:29:13.378182+00:00",
-          "type": "start",
-          "agent": "boss",
-          "message": "Boss delegated the appraisal workflow",
-          "mode": "optimized"
-        },
-        {
-          "at": "2026-10-23T22:29:13.378543+00:00",
-          "type": "start",
-          "agent": "photo_inspection",
-          "message": "Photo Inspector started",
-          "tool": "pydantic_ai"
-        },
-        {
-          "at": "2026-10-23T22:29:13.485980+00:00",
-          "type": "tool",
-          "agent": "photo_inspection",
-          "message": "Optimized uploaded image for vision",
-          "tool": "optimize_and_inspect_image",
-          "arguments": {
-            "original_size": [
-              900,
-              560
-            ],
-            "optimized_size": [
-              900,
-              560
-            ]
-          },
-          "result_summary": "71804 bytes sent to vision"
-        },
-        {
-          "at": "2026-10-23T22:29:18.398461+00:00",
-          "type": "result",
-          "agent": "photo_inspection",
-          "message": "Typed vision result validated",
-          "tool": "pydantic_ai",
-          "usage": {
-            "request_tokens": null,
-            "response_tokens": null,
-            "total_tokens": 1431
-          },
-          "cost": null
-        },
-        {
-          "at": "2026-10-23T22:29:18.398937+00:00",
-          "type": "tool",
-          "agent": "pricing",
-          "message": "Checked optional market context",
-          "tool": "live_web_comp_search",
-          "result_summary": "Live web comparisons are unavailable; using local full synthetic evidence."
-        },
-        {
-          "at": "2026-10-23T22:29:18.399189+00:00",
-          "type": "tool",
-          "agent": "pricing",
-          "message": "Selected relevant sold comparisons",
-          "tool": "comparison_tool",
-          "evidence_count": 3
-        },
-        {
-          "at": "2026-10-23T22:29:18.399240+00:00",
-          "type": "result",
-          "agent": "pricing",
-          "message": "Calculated four prices in Python",
-          "tool": "pricing_tool",
-          "prices": {
-            "quick_sale": 90.0,
-            "fair_market": 100.0,
-            "listing_price": 110.0,
-            "minimum_acceptable_offer": 80.0
-          }
-        },
-        {
-          "at": "2026-10-23T22:29:18.399278+00:00",
-          "type": "start",
-          "agent": "listing_and_buyer_safety",
-          "message": "Listing and safety worker started",
-          "tool": "portkey"
-        },
-        {
-          "at": "2026-10-23T22:29:21.772840+00:00",
-          "type": "result",
-          "agent": "listing_and_buyer_safety",
-          "message": "Portkey returned a structured response",
-          "tool": "portkey",
-          "usage": {
-            "input_tokens": 882,
-            "input_tokens_details": {
-              "cache_write_tokens": 0,
-              "cached_tokens": 0
-            },
-            "output_tokens": 441,
-            "output_tokens_details": {
-              "reasoning_tokens": 0
-            },
-            "total_tokens": 1323
-          },
-          "cost": null
-        },
-        {
-          "at": "2026-10-23T22:29:21.775517+00:00",
-          "type": "tool",
-          "agent": "listing_and_buyer_safety",
-          "message": "Checked listing claims and price compliance",
-          "tool": "verify_listing_compliance",
-          "result_summary": "compliant"
-        }
-      ],
+      "events": [],
       "usage": [
         {
           "run_id": "222bd726-2d28-42ed-a24c-cde6434eea21",
@@ -1175,36 +1065,14 @@
           "at": "2026-10-23T22:29:21.769095+00:00"
         }
       ],
-      "created_at": "2026-10-23T22:29:13.376402+00:00",
-      "finished_at": "2026-10-23T22:29:21.775987+00:00"
+      "created_at": "2026-10-23T22:29:18.396811+00:00"
     },
     {
       "run_id": "6a63ddf6-1f24-4038-912a-f162939a2a56",
-      "kind": "buyer_check",
+      "kind": "persisted",
       "optimized": true,
       "status": "complete",
-      "events": [
-        {
-          "at": "2026-10-23T22:29:54.245653+00:00",
-          "type": "result",
-          "agent": "listing_and_buyer_safety",
-          "message": "Portkey returned a structured response",
-          "tool": "portkey",
-          "usage": {
-            "input_tokens": 274,
-            "input_tokens_details": {
-              "cache_write_tokens": 0,
-              "cached_tokens": 0
-            },
-            "output_tokens": 124,
-            "output_tokens_details": {
-              "reasoning_tokens": 0
-            },
-            "total_tokens": 398
-          },
-          "cost": null
-        }
-      ],
+      "events": [],
       "usage": [
         {
           "run_id": "6a63ddf6-1f24-4038-912a-f162939a2a56",
@@ -1221,23 +1089,215 @@
           "at": "2026-10-23T22:29:54.242978+00:00"
         }
       ],
-      "created_at": "2026-10-23T22:29:53.348602+00:00",
-      "finished_at": "2026-10-23T22:29:54.246762+00:00"
+      "created_at": "2026-10-23T22:29:54.242978+00:00"
+    },
+    {
+      "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
+      "kind": "appraisal",
+      "optimized": true,
+      "status": "complete",
+      "events": [
+        {
+          "at": "2026-10-23T22:43:43.575104+00:00",
+          "type": "start",
+          "agent": "boss",
+          "message": "Boss delegated the appraisal workflow",
+          "mode": "optimized"
+        },
+        {
+          "at": "2026-10-23T22:43:43.575205+00:00",
+          "type": "start",
+          "agent": "photo_inspection",
+          "message": "Photo Inspector started",
+          "tool": "pydantic_ai"
+        },
+        {
+          "at": "2026-10-23T22:43:43.687536+00:00",
+          "type": "tool",
+          "agent": "photo_inspection",
+          "message": "Optimized uploaded image for vision",
+          "tool": "optimize_and_inspect_image",
+          "arguments": {
+            "original_size": [
+              900,
+              560
+            ],
+            "optimized_size": [
+              900,
+              560
+            ]
+          },
+          "result_summary": "79991 bytes sent to vision"
+        },
+        {
+          "at": "2026-10-23T22:43:48.364984+00:00",
+          "type": "result",
+          "agent": "photo_inspection",
+          "message": "Typed vision result validated",
+          "tool": "pydantic_ai",
+          "usage": {
+            "request_tokens": null,
+            "response_tokens": null,
+            "total_tokens": 1459
+          },
+          "cost": null
+        },
+        {
+          "at": "2026-10-23T22:43:48.367399+00:00",
+          "type": "tool",
+          "agent": "pricing",
+          "message": "Checked optional market context",
+          "tool": "live_web_comp_search",
+          "result_summary": "Live web comparisons are unavailable; using local full synthetic evidence."
+        },
+        {
+          "at": "2026-10-23T22:43:48.369662+00:00",
+          "type": "tool",
+          "agent": "pricing",
+          "message": "Selected relevant sold comparisons",
+          "tool": "comparison_tool",
+          "evidence_count": 4
+        },
+        {
+          "at": "2026-10-23T22:43:48.369893+00:00",
+          "type": "result",
+          "agent": "pricing",
+          "message": "Calculated four prices in Python",
+          "tool": "pricing_tool",
+          "prices": {
+            "quick_sale": 365.0,
+            "fair_market": 420.0,
+            "listing_price": 460.0,
+            "minimum_acceptable_offer": 325.0
+          }
+        },
+        {
+          "at": "2026-10-23T22:43:48.369995+00:00",
+          "type": "start",
+          "agent": "listing_and_buyer_safety",
+          "message": "Listing and safety worker started",
+          "tool": "portkey"
+        },
+        {
+          "at": "2026-10-23T22:43:51.510507+00:00",
+          "type": "result",
+          "agent": "listing_and_buyer_safety",
+          "message": "Portkey returned a structured response",
+          "tool": "portkey",
+          "usage": {
+            "input_tokens": 1003,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 399,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 1402
+          },
+          "cost": null
+        },
+        {
+          "at": "2026-10-23T22:43:51.512433+00:00",
+          "type": "tool",
+          "agent": "listing_and_buyer_safety",
+          "message": "Checked listing claims and price compliance",
+          "tool": "verify_listing_compliance",
+          "result_summary": "compliant"
+        }
+      ],
+      "usage": [
+        {
+          "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
+          "agent": "photo_inspection",
+          "source": "pydantic_ai",
+          "input_tokens": 1259,
+          "cached_input_tokens": null,
+          "cache_write_tokens": 1133,
+          "output_tokens": 200,
+          "total_tokens": 1459,
+          "cost_usd": null,
+          "cost_status": "pending",
+          "optimized": true,
+          "at": "2026-10-23T22:43:48.359580+00:00"
+        },
+        {
+          "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
+          "agent": "listing_and_buyer_safety",
+          "source": "portkey",
+          "input_tokens": 1003,
+          "cached_input_tokens": null,
+          "cache_write_tokens": null,
+          "output_tokens": 399,
+          "total_tokens": 1402,
+          "cost_usd": null,
+          "cost_status": "pending",
+          "optimized": true,
+          "at": "2026-10-23T22:43:51.507402+00:00"
+        }
+      ],
+      "created_at": "2026-10-23T22:43:43.569646+00:00",
+      "finished_at": "2026-10-23T22:43:51.513933+00:00"
+    },
+    {
+      "run_id": "b13a0682-f910-4582-b3b3-8fe242086152",
+      "kind": "security_block",
+      "optimized": true,
+      "status": "blocked",
+      "events": [
+        {
+          "at": "2026-10-23T22:44:01.376470+00:00",
+          "type": "error",
+          "agent": "security_gate",
+          "message": "Security gate blocked a phishing or instruction-like buyer message.",
+          "blocked": true,
+          "finding_codes": [
+            "PROMPT_INJECTION",
+            "SECRET_REQUEST"
+          ]
+        }
+      ],
+      "usage": [],
+      "created_at": "2026-10-23T22:44:01.376407+00:00",
+      "finished_at": "2026-10-23T22:44:01.381817+00:00"
+    },
+    {
+      "run_id": "4f61eb5f-69b2-4c94-a8be-4326021a05f6",
+      "kind": "security_block",
+      "optimized": true,
+      "status": "blocked",
+      "events": [
+        {
+          "at": "2026-10-23T22:44:05.359449+00:00",
+          "type": "error",
+          "agent": "security_gate",
+          "message": "Security gate blocked a phishing or instruction-like buyer message.",
+          "blocked": true,
+          "finding_codes": [
+            "PHISHING_PAYMENT",
+            "VERIFICATION_CODE_REQUEST"
+          ]
+        }
+      ],
+      "usage": [],
+      "created_at": "2026-10-23T22:44:05.359399+00:00",
+      "finished_at": "2026-10-23T22:44:05.362182+00:00"
     }
   ],
   "summary": {
-    "runs": 17,
-    "usage_records": 24,
+    "runs": 20,
+    "usage_records": 26,
     "optimized": {
-      "calls": 22,
-      "measured_calls": 22,
-      "measured_runs": 15,
-      "total_tokens": 22868,
-      "average_tokens_per_run": 1524.53,
+      "calls": 24,
+      "measured_calls": 24,
+      "measured_runs": 16,
+      "total_tokens": 25729,
+      "average_tokens_per_run": 1608.06,
       "total_cost": null,
       "average_cost_per_run": null,
-      "estimated_total_cost": 0.017013,
-      "average_estimated_cost_per_run": 0.0011342,
+      "estimated_total_cost": 0.0190425,
+      "average_estimated_cost_per_run": 0.00119016,
       "cost_status": "estimated"
     },
     "unoptimized": {
@@ -1256,8 +1316,8 @@
       "1": {
         "optimized": {
           "monthly_users": 1,
-          "tokens": 1525,
-          "cost": 0.0011342,
+          "tokens": 1608,
+          "cost": 0.00119016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -1270,8 +1330,8 @@
       "100": {
         "optimized": {
           "monthly_users": 100,
-          "tokens": 152453,
-          "cost": 0.11342,
+          "tokens": 160806,
+          "cost": 0.119016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -1284,8 +1344,8 @@
       "10000": {
         "optimized": {
           "monthly_users": 10000,
-          "tokens": 15245300,
-          "cost": 11.342,
+          "tokens": 16080600,
+          "cost": 11.9016,
           "cost_status": "estimated"
         },
         "unoptimized": {
@@ -1298,7 +1358,7 @@
     },
     "instruction_cache": {
       "hits": 7,
-      "misses": 15,
+      "misses": 18,
       "entries": 3
     },
     "pricing_assumption": "Measured Portkey costs are used when available. Otherwise, estimates use $0.50 / 1M input tokens, $0.05 / 1M cached input tokens, and $1.50 / 1M output tokens."
