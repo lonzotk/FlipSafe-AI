@@ -112,6 +112,24 @@
         "VERIFICATION_CODE_REQUEST"
       ],
       "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T23:19:21.054912+00:00",
+      "run_id": "c6d93084-fd8e-4aa8-b16b-4ca6f533f739",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
+    },
+    {
+      "at": "2026-10-23T23:19:53.821442+00:00",
+      "run_id": "7f5eb5c3-40c4-4aec-93e6-6aa524fc6e85",
+      "defenses": [
+        "PROMPT_INJECTION",
+        "SECRET_REQUEST"
+      ],
+      "summary": "Security gate blocked a phishing or instruction-like buyer message."
     }
   ]
 }

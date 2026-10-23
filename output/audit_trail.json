@@ -1093,120 +1093,10 @@
     },
     {
       "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
-      "kind": "appraisal",
+      "kind": "persisted",
       "optimized": true,
       "status": "complete",
-      "events": [
-        {
-          "at": "2026-10-23T22:43:43.575104+00:00",
-          "type": "start",
-          "agent": "boss",
-          "message": "Boss delegated the appraisal workflow",
-          "mode": "optimized"
-        },
-        {
-          "at": "2026-10-23T22:43:43.575205+00:00",
-          "type": "start",
-          "agent": "photo_inspection",
-          "message": "Photo Inspector started",
-          "tool": "pydantic_ai"
-        },
-        {
-          "at": "2026-10-23T22:43:43.687536+00:00",
-          "type": "tool",
-          "agent": "photo_inspection",
-          "message": "Optimized uploaded image for vision",
-          "tool": "optimize_and_inspect_image",
-          "arguments": {
-            "original_size": [
-              900,
-              560
-            ],
-            "optimized_size": [
-              900,
-              560
-            ]
-          },
-          "result_summary": "79991 bytes sent to vision"
-        },
-        {
-          "at": "2026-10-23T22:43:48.364984+00:00",
-          "type": "result",
-          "agent": "photo_inspection",
-          "message": "Typed vision result validated",
-          "tool": "pydantic_ai",
-          "usage": {
-            "request_tokens": null,
-            "response_tokens": null,
-            "total_tokens": 1459
-          },
-          "cost": null
-        },
-        {
-          "at": "2026-10-23T22:43:48.367399+00:00",
-          "type": "tool",
-          "agent": "pricing",
-          "message": "Checked optional market context",
-          "tool": "live_web_comp_search",
-          "result_summary": "Live web comparisons are unavailable; using local full synthetic evidence."
-        },
-        {
-          "at": "2026-10-23T22:43:48.369662+00:00",
-          "type": "tool",
-          "agent": "pricing",
-          "message": "Selected relevant sold comparisons",
-          "tool": "comparison_tool",
-          "evidence_count": 4
-        },
-        {
-          "at": "2026-10-23T22:43:48.369893+00:00",
-          "type": "result",
-          "agent": "pricing",
-          "message": "Calculated four prices in Python",
-          "tool": "pricing_tool",
-          "prices": {
-            "quick_sale": 365.0,
-            "fair_market": 420.0,
-            "listing_price": 460.0,
-            "minimum_acceptable_offer": 325.0
-          }
-        },
-        {
-          "at": "2026-10-23T22:43:48.369995+00:00",
-          "type": "start",
-          "agent": "listing_and_buyer_safety",
-          "message": "Listing and safety worker started",
-          "tool": "portkey"
-        },
-        {
-          "at": "2026-10-23T22:43:51.510507+00:00",
-          "type": "result",
-          "agent": "listing_and_buyer_safety",
-          "message": "Portkey returned a structured response",
-          "tool": "portkey",
-          "usage": {
-            "input_tokens": 1003,
-            "input_tokens_details": {
-              "cache_write_tokens": 0,
-              "cached_tokens": 0
-            },
-            "output_tokens": 399,
-            "output_tokens_details": {
-              "reasoning_tokens": 0
-            },
-            "total_tokens": 1402
-          },
-          "cost": null
-        },
-        {
-          "at": "2026-10-23T22:43:51.512433+00:00",
-          "type": "tool",
-          "agent": "listing_and_buyer_safety",
-          "message": "Checked listing claims and price compliance",
-          "tool": "verify_listing_compliance",
-          "result_summary": "compliant"
-        }
-      ],
+      "events": [],
       "usage": [
         {
           "run_id": "e1b068e9-3a3c-43ce-8466-456f1a665349",
@@ -1237,8 +1127,7 @@
           "at": "2026-10-23T22:43:51.507402+00:00"
         }
       ],
-      "created_at": "2026-10-23T22:43:43.569646+00:00",
-      "finished_at": "2026-10-23T22:43:51.513933+00:00"
+      "created_at": "2026-10-23T22:43:48.359580+00:00"
     },
     {
       "run_id": "b13a0682-f910-4582-b3b3-8fe242086152",
@@ -1283,6 +1172,50 @@
       "usage": [],
       "created_at": "2026-10-23T22:44:05.359399+00:00",
       "finished_at": "2026-10-23T22:44:05.362182+00:00"
+    },
+    {
+      "run_id": "c6d93084-fd8e-4aa8-b16b-4ca6f533f739",
+      "kind": "security_block",
+      "optimized": true,
+      "status": "blocked",
+      "events": [
+        {
+          "at": "2026-10-23T23:19:21.054899+00:00",
+          "type": "error",
+          "agent": "security_gate",
+          "message": "Security gate blocked a phishing or instruction-like buyer message.",
+          "blocked": true,
+          "finding_codes": [
+            "PROMPT_INJECTION",
+            "SECRET_REQUEST"
+          ]
+        }
+      ],
+      "usage": [],
+      "created_at": "2026-10-23T23:19:21.054835+00:00",
+      "finished_at": "2026-10-23T23:19:21.058274+00:00"
+    },
+    {
+      "run_id": "7f5eb5c3-40c4-4aec-93e6-6aa524fc6e85",
+      "kind": "security_block",
+      "optimized": true,
+      "status": "blocked",
+      "events": [
+        {
+          "at": "2026-10-23T23:19:53.821415+00:00",
+          "type": "error",
+          "agent": "security_gate",
+          "message": "Security gate blocked a phishing or instruction-like buyer message.",
+          "blocked": true,
+          "finding_codes": [
+            "PROMPT_INJECTION",
+            "SECRET_REQUEST"
+          ]
+        }
+      ],
+      "usage": [],
+      "created_at": "2026-10-23T23:19:53.821360+00:00",
+      "finished_at": "2026-10-23T23:19:53.824327+00:00"
     }
   ],
   "summary": {
@@ -1359,7 +1292,7 @@
     "instruction_cache": {
       "hits": 7,
       "misses": 18,
-      "entries": 3
+      "entries": 0
     },
     "pricing_assumption": "Measured Portkey costs are used when available. Otherwise, estimates use $0.50 / 1M input tokens, $0.05 / 1M cached input tokens, and $1.50 / 1M output tokens."
   }

@@ -18,7 +18,26 @@ search provider, marketplace posting, or payment system is used.
 
 Follow these steps from the project folder.
 
-1. Create the local environment file:
+1. Create and activate a Python virtual environment:
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+macOS/Linux:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+After activation, your terminal should show `(.venv)`. Keep this terminal
+activated while running the backend. Use `deactivate` when you are finished.
+
+2. Create the local environment file:
 
 ```text
 PORTKEY_API_KEY=your_portkey_key
@@ -27,13 +46,14 @@ PORTKEY_API_KEY=your_portkey_key
 Put that line in `.env`. You can copy `.env.example` first, then fill in your
 Portkey key.
 
-2. Install the backend packages:
+3. Install the backend packages:
 
 ```powershell
+python -m pip install --upgrade pip
 python -m pip install -r backend/requirements.txt
 ```
 
-3. Install the frontend packages:
+4. Install the frontend packages:
 
 ```powershell
 cd frontend
@@ -41,21 +61,22 @@ npm install
 cd ..
 ```
 
-4. Start the backend:
+5. Start the backend:
 
 ```powershell
 python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
 ```
 
-5. Open a second terminal, start the frontend, and leave the backend terminal
+6. Open a second terminal, activate the virtual environment, start the frontend, and leave the backend terminal
 running:
 
 ```powershell
+.\.venv\Scripts\Activate.ps1
 cd frontend
 npm run dev
 ```
 
-6. Open <http://127.0.0.1:5173> in your browser.
+7. Open <http://127.0.0.1:5173> in your browser.
 
 Vite proxies `/api` and `/data` to FastAPI. Fill in `PORTKEY_API_KEY` before
 using live vision or listing generation. Local sample images, comparison math,
