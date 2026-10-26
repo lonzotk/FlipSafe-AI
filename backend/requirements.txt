@@ -1,5 +1,6 @@
 fastapi==0.115.6
 uvicorn[standard]==0.34.0
 pydantic-ai-slim[openai]==1.0.17
+opentelemetry-api==1.37.0
 python-dotenv==1.2.4
 pillow==13.0.0
